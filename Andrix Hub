@@ -1,0 +1,253 @@
+local Library=loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F"))()
+local Window = Library.CreateLib("Andrix Hub With Hydro", "Midnight")
+local Tab = Window:NewTab("Main")
+
+local Section = Tab:NewSection("Main")
+
+Section:NewButton("Op Script", "Subscribe To HawkAndrix78", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/YourLocalNzi/Ye/main/RedCoat8102-obfuscated.lua"))()
+end)
+
+Section:NewButton("Artis", "Subscribe To HawkAndrix78", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/lightHubDev/Artis/main/MainScript"))()
+end)
+
+Section:NewButton("Inferno X", "Subscribe To HawkAndrix78", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/uaahjajajqoqiqkqhwhwhw/SCRIPTERV3/main/INFERNO%20X%20V1.5"))()
+end)
+
+Section:NewButton("IcecatV2", "Subscribe To HawkAndrix78", function()
+    loadstring(game:HttpGet(('https://github.com/Baconontop/bedwarsV2/raw/main/IcecatBedwars'),true))()
+end)
+
+Section:NewButton("JnHhGaming","Use It On Duels Subscribe To HawkAndrix78",function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/JNHHGaming/JN-HH-Gaming-Pro/main/JN%20HH%20Gaming%20Pro",true))()
+end)
+
+Section:NewButton("Andrix Hub v2","Don't Use It",function()
+   -- Re Made by Lynx15
+local ScreenGui = Instance.new("ScreenGui")
+local main = Instance.new("Frame")
+local title = Instance.new("TextLabel")
+local Text = Instance.new("TextButton")
+local Te = Instance.new("TextButton")
+local close = Instance.new("TextButton")
+local openmain = Instance.new("Frame")
+local open = Instance.new("TextButton")
+--Properties:
+ScreenGui.Parent = game.CoreGui
+
+main.Name = "main"
+main.Parent = ScreenGui
+main.BackgroundColor3 = Color3.new(0, 0, 0)
+main.Position = UDim2.new(0.0203577988, 0, 0.641277611, 0)
+main.Size = UDim2.new(0, 332, 0, 211)
+main.Visible = false
+main.Active = true
+main.Draggable = true
+
+title.Name = "title"
+title.Parent = main
+title.BackgroundColor3 = Color3.new(1, 0, 1)
+title.Size = UDim2.new(0, 332, 0, 31)
+title.Font = Enum.Font.GothamBold
+title.Text = "Bedwars Gui"
+title.TextColor3 = Color3.new(0, 0, 0)
+title.TextSize = 14
+
+Text.Name = "Text"
+Text.Parent = main
+Text.BackgroundColor3 = Color3.new(0.333333, 1, 0)
+Text.Position = UDim2.new(0.036144577, 0, 0.379146934, 0)
+Text.Size = UDim2.new(0, 110, 0, 50)
+Text.Font = Enum.Font.GothamBold
+Text.Text = "Inf Jumps"
+Text.TextColor3 = Color3.new(0, 0, 0)
+Text.TextScaled = true
+Text.TextSize = 10
+Text.TextWrapped = true
+Text.MouseButton1Down:connect(function()
+local InfiniteJumpEnabled = true
+game:GetService("UserInputService").JumpRequest:connect(function()
+	if InfiniteJumpEnabled then
+		game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")
+	end
+end)
+end)
+
+Te.Name = "Te"
+Te.Parent = main
+Te.BackgroundColor3 = Color3.new(0.333333, 1, 0)
+Te.Position = UDim2.new(0.614457846, 0, 0.379146934, 0)
+Te.Size = UDim2.new(0, 110, 0, 50)
+Te.Font = Enum.Font.GothamBold
+Te.Text = "No Fall Damage"
+Te.TextColor3 = Color3.new(0, 0, 0)
+Te.TextScaled = true
+Te.TextSize = 14
+Te.TextWrapped = true
+Te.MouseButton1Down:connect(function()
+local nofall = true
+
+    if callback then
+
+        if nofall then
+
+            spawn(function()
+
+                repeat
+
+                    wait()
+
+                    if nofall == false then
+
+                        return end
+
+                        game:GetService("ReplicatedStorage").rbxts_include.node_modules.net.out._NetManaged.GroundHit:FireServer()
+
+                    until nofall == false
+
+                end)
+
+            end
+
+    else
+
+        local nofall = false
+
+    end
+
+end)
+
+close.Name = "Main"
+close.Parent = main
+close.BackgroundColor3 = Color3.new(1, 0, 0)
+close.Position = UDim2.new(0.879518092, 0, 0, 0)
+close.Size = UDim2.new(0, 40, 0, 31)
+close.Font = Enum.Font.GothamBlack
+close.Text = "X"
+close.TextColor3 = Color3.new(0, 0, 0)
+close.TextScaled = true
+close.TextSize = 14
+close.TextWrapped = true
+close.MouseButton1Down:connect(function()
+main.Visible = false
+openmain.Visible = true
+end)
+
+openmain.Name = "openmain"
+openmain.Parent = ScreenGui
+openmain.BackgroundColor3 = Color3.new(1, 1, 1)
+openmain.Position = UDim2.new(0.00801973976, 0, 0.423832953, 0)
+openmain.Size = UDim2.new(0, 100, 0, 28)
+openmain.Active = true
+openmain.Draggable = true
+
+open.Name = "open"
+open.Parent = openmain
+open.BackgroundColor3 = Color3.new(1, 0, 0)
+open.Size = UDim2.new(0, 100, 0, 28)
+open.Font = Enum.Font.GothamBold
+open.Text = "NEXT"
+open.TextColor3 = Color3.new(0, 0, 0)
+open.TextSize = 18
+open.TextWrapped = true
+open.MouseButton1Down:connect(function()
+openmain.Visible = false
+main.Visible = true
+end)
+
+Section:NewToggle("Nuker v2", "Auto break bed  fast and covers", function(state) 
+         if state then 
+                 BindToStepped("Nuked v2", 1, function() 
+                         nuker() 
+                 end) 
+         else 
+                 UnbindFromStepped("Nuker2") 
+         end 
+ end) 
+  end) 
+  
+ Section:NewButton("Inf Jumps", "jumps high", function()
+local InfiniteJumpEnabled = true
+game:GetService("UserInputService").JumpRequest:connect(function()
+	if InfiniteJumpEnabled then
+		game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")
+	end
+end)
+end)
+
+Section:NewToggle("Velocity", "Prevents taking a knockback", function(state) 
+         if state then 
+                 KnockbackTable["kbDirectionStrength"] = 0 
+                 KnockbackTable["kbUpwardStrength"] = 0 
+         else 
+                 KnockbackTable["kbDirectionStrength"] = 150
+                 KnockbackTable["kbUpwardStrength"] = 150
+         end 
+ end)
+  
+  Section:NewToggle("No Fall Damage", "Opens No Fall Damage", function(callback)
+
+    local nofall = true
+
+    if callback then
+
+        if nofall then
+
+            spawn(function()
+
+                repeat
+
+                    wait()
+
+                    if nofall == false then
+
+                        return end
+
+                        game:GetService("ReplicatedStorage").rbxts_include.node_modules.net.out._NetManaged.GroundHit:FireServer()
+
+                    until nofall == false
+
+                end)
+
+            end
+
+    else
+
+        local nofall = false
+
+    end
+
+end)
+
+Section:NewButton("Forest Z", "", function()
+    local player = game:GetService("Players") local lplr = player.LocalPlayer if lplr.Character.Humanoid.RigType == Enum.HumanoidRigType.R15 then if lplr.Character:FindFirstChild("Torso") then torso = lplr.Character.Torso else torso = lplr.Character.UpperTorso end local CapeP = Instance.new("Part", torso.Parent) CapeP.Name = "Cape" CapeP.Anchored = false CapeP.CanCollide = false CapeP.TopSurface = 0 CapeP.BottomSurface = 0 CapeP.Color = Color3.fromRGB(0,0,0) CapeP.FormFactor = "Custom" CapeP.Size = Vector3.new(0.2,0.2,0.2) local decal = Instance.new("Decal", CapeP) decal.Texture = "http://www.roblox.com/asset/?id=9695902096" decal.Face = "Back" local msh = Instance.new("BlockMesh", CapeP) msh.Scale = Vector3.new(9,17.5,0.5) local motor = Instance.new("Motor", CapeP) motor.Part0 = CapeP motor.Part1 = torso motor.MaxVelocity = 0.01 motor.C0 = CFrame.new(0,1.75,0) * CFrame.Angles(0,math.rad(90),0) motor.C1 = CFrame.new(0,1,0.45) * CFrame.Angles(0,math.rad(90),0) local wave = false repeat wait(1/44) decal.Transparency = torso.Transparency local ang = 0.1 local oldmag = torso.Velocity.magnitude local mv = 0.002 if wave then ang = ang + ((torso.Velocity.magnitude/10) * 0.05) + 0.05 wave = false else wave = true end ang = ang + math.min(torso.Velocity.magnitude/11, 0.5) motor.MaxVelocity = math.min((torso.Velocity.magnitude/111), 0.04) + mv motor.DesiredAngle = -ang if motor.CurrentAngle < -0.2 and motor.DesiredAngle > -0.2 then motor.MaxVelocity = 0.04 end repeat wait() until motor.CurrentAngle == motor.DesiredAngle or math.abs(torso.Velocity.magnitude - oldmag) >= (torso.Velocity.magnitude/10) + 1 if torso.Velocity.magnitude < 0.1 then wait(0.1) end until not CapeP or CapeP.Parent ~= torso.Parent end
+end)
+
+Section:NewToggle("Nuker v2", "Auto break bed  fast and covers", function(state) 
+         if state then 
+                 BindToStepped("Nuked v2", 1, function() 
+                         nuker() 
+                 end) 
+         else 
+                 UnbindFromStepped("Nuker2") 
+         end 
+ end) 
+  
+  Section:NewButton("VapeV4", "Opens Vape", function()
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))()
+ end)
+
+Section:NewButton("Andrix Hub V3","Making It",function()
+ local Library=loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F"))()
+local Window = Library.CreateLib("Andrix Hub V3", "BloodTheme")
+local Tab = Window:NewTab("OverPowered")
+
+local Section = Tab:NewSection("Combat")
+
+end)
+
+
+ 
+ 
